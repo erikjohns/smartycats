@@ -1,72 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
-  <RelativeLayout
-      android:id="@+id/headingRelativeLayout"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      android:layout_margin="20dp">
-
-      <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentStart="true"
-          android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/user_profile_image"
-            android:background="@drawable/user_profile_image_background"
-            android:clipToOutline="true"
-            android:layout_marginRight="15dp"/>
+    <RelativeLayout
+        android:id="@+id/headingRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_vertical">
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/welcome_message"
-              android:fontFamily="@font/quicksand_semibold"
-              android:textSize="15sp"
-              android:layout_marginBottom="-5dp"
-              android:textColor="@color/gradient_end_1"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/user_profile_image_background"
+                android:clipToOutline="true"
+                android:src="@drawable/user_profile_image" />
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_gravity="center"
-              android:text="@string/user_name"
-              android:fontFamily="@font/quicksand_semibold"
-              android:textSize="30sp"
-              android:textColor="@color/gradient_end_1"
-              />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-5dp"
+                    android:fontFamily="@font/quicksand_semibold"
+                    android:text="@string/welcome_message"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/quicksand_semibold"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
         </LinearLayout>
-      </LinearLayout>
 
-      <ImageView
-          android:layout_width="35dp"
-          android:layout_height="35dp"
-          android:src="@drawable/menu_icon"
-          android:layout_centerVertical="true"
-          android:layout_alignParentEnd="true"
-          app:tint="@color/gradient_end_1" />
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon"
+            app:tint="@color/black" />
 
     </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingRelativeLayout"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:background="@drawable/search_bar_background"
+        app:defaultQueryHint="@string/search_bar_message"
+        android:fontFamily="@font/quicksand_medium"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@color/white"/>
 
     <TextView
         android:id="@+id/textView"
@@ -82,94 +97,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headingRelativeLayout" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:background="@drawable/background_option_1">
-
-      <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          android:layout_centerInParent="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/heading_upcoming_tests"
-            android:textColor="@color/white"
-            android:fontFamily="@font/quicksand_medium"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/number_1"
-            android:textColor="@color/white"
-            android:fontFamily="@font/quicksand_bold"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:layout_gravity="center_horizontal"/>
-
-      </LinearLayout>
-    </RelativeLayout>
-
-  <RelativeLayout
-      android:id="@+id/relativeLayout3"
-      android:layout_width="100dp"
-      android:layout_height="100dp"
-      android:layout_margin="20dp"
-      app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
-      app:layout_constraintStart_toStartOf="parent"
-      android:background="@drawable/background_option_1">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/heading_upcoming_assignments"
-          android:textColor="@color/white"
-          android:fontFamily="@font/quicksand_medium"
-          android:textAlignment="center"/>
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/number_2"
-          android:textColor="@color/white"
-          android:fontFamily="@font/quicksand_bold"
-          android:textAlignment="center"
-          android:textSize="30sp"
-          android:layout_gravity="center_horizontal" />
-
-    </LinearLayout>
-
-  </RelativeLayout>
-
-  <RelativeLayout
-      android:id="@+id/relativeLayout2"
-      android:layout_width="0dp"
-      android:layout_height="220dp"
-      android:layout_margin="20dp"
-      android:layout_marginTop="20dp"
-      android:layout_marginEnd="70dp"
-      android:background="@drawable/background_option_2"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@+id/relativeLayout1"
-      app:layout_constraintTop_toBottomOf="@+id/textView">
-
-  </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@+id/search_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

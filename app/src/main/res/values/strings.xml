@@ -10,4 +10,6 @@
 
     <string name="number_1">4</string>
     <string name="number_2">6</string>
+
+    <string name="search_bar_message">What\'re you looking for?</string>
 </resources>
