@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SmartyCats</string>
+
+    <string name="user_name">Erik J</string>
+    <string name="welcome_message">Hello,</string>
+
+    <string name="heading_quick_view">At A Glance</string>
+    <string name="heading_upcoming_tests">Upcoming Tests:</string>
+    <string name="heading_upcoming_assignments">Upcoming Assignments:</string>
+
+    <string name="number_1">4</string>
+    <string name="number_2">6</string>
 </resources>
