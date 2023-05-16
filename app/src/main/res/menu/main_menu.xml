@@ -11,17 +11,17 @@
         <item
             android:id="@+id/nav_classes"
             android:title="Classes"
-            android:icon="@drawable/home_icon" />
+            android:icon="@drawable/grad_cap_icon" />
 
         <item
             android:id="@+id/nav_students"
             android:title="Students"
-            android:icon="@drawable/home_icon" />
+            android:icon="@drawable/student_icon" />
 
         <item
             android:id="@+id/nav_assignments"
             android:title="Assignments"
-            android:icon="@drawable/home_icon" />
+            android:icon="@drawable/exam_icon" />
 
     </group>
 
