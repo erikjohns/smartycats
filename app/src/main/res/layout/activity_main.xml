@@ -27,7 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap">
 
                 <ImageView
                     android:layout_width="80dp"
@@ -35,8 +36,10 @@
                     android:layout_marginEnd="15dp"
                     android:background="@drawable/user_profile_image_background"
                     android:clipToOutline="true"
+                    android:contentDescription="@string/profile_picture"
                     android:src="@drawable/user_profile_image"
-                    android:contentDescription="@string/profile_picture" />
+                    tools:ignore="ImageContrastCheck"
+                    tools:targetApi="s" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -60,7 +63,8 @@
                         android:fontFamily="@font/quicksand_semibold"
                         android:text="@string/user_name"
                         android:textColor="@color/black"
-                        android:textSize="32sp" />
+                        android:textSize="32sp"
+                        tools:ignore="TextContrastCheck" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -119,6 +123,7 @@
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
         android:layout_gravity="end"
-        app:itemTextAppearance="@style/MenuFontStyle"/>
+        app:itemTextAppearance="@style/MenuFontStyle"
+        android:background="@drawable/navigation_background" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

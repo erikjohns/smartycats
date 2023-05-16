@@ -4,19 +4,29 @@
     android:layout_height="200dp"
     android:orientation="vertical"
     android:background="@drawable/background_option_1"
-    android:gravity="bottom"
+    android:gravity="center_vertical"
     android:padding="20dp">
     
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/montana_state_bobcats_logo" />
+        android:src="@drawable/montana_state_bobcats_logo"
+        android:contentDescription="@string/msu_bobcat_logo_content_description" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="24sp"
-        android:fontFamily="@font/quicksand_medium" />
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tagline"
+        android:textSize="15sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

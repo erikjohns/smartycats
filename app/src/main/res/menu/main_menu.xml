@@ -4,23 +4,23 @@
 
         <item
             android:id="@+id/nav_home"
-            android:title="Home"
+            android:title="@string/home"
             android:icon="@drawable/home_icon" />
 
         <item
             android:id="@+id/nav_classes"
-            android:title="Classes"
+            android:title="@string/classes"
             android:icon="@drawable/grad_cap_icon"
-            android:fontFamily="@font/quicksand_light"/>
+            android:fontFamily="@font/quicksand_light" />
 
         <item
             android:id="@+id/nav_students"
-            android:title="Students"
+            android:title="@string/students"
             android:icon="@drawable/student_icon" />
 
         <item
             android:id="@+id/nav_assignments"
-            android:title="Assignments"
+            android:title="@string/assignments"
             android:icon="@drawable/exam_icon" />
 
     </group>

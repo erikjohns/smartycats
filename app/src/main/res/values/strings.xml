@@ -18,4 +18,10 @@
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="navi">Close Navigation Drawer</string>
+    <string name="Tagline">Helping Bobcats reach their goals!</string>
+    <string name="msu_bobcat_logo_content_description">MSU Bobcat Logo</string>
+    <string name="home">Home</string>
+    <string name="classes">Classes</string>
+    <string name="students">Students</string>
+    <string name="assignments">Assignments</string>
 </resources>
