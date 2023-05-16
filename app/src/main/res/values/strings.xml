@@ -12,4 +12,10 @@
     <string name="number_2">6</string>
 
     <string name="search_bar_message">What\'re you looking for?</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="menu_icon">Menu Icon</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="navi">Close Navigation Drawer</string>
 </resources>
