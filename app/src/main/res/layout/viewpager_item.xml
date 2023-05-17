@@ -30,7 +30,9 @@
                     android:id="@+id/ivimage"
                     android:scaleType="centerCrop"
                     android:src="@drawable/viewpager_image_1"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="10dp"
+                    android:background="@drawable/viewpager_image_background"
+                    android:clipToOutline="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"

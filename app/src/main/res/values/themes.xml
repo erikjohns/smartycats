@@ -19,4 +19,11 @@
         <item name="android:textSize">16sp</item>
         <item name="textFillColor">@color/black</item>
     </style>
+
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
