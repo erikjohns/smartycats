@@ -24,4 +24,12 @@
     <string name="classes">Classes</string>
     <string name="students">Students</string>
     <string name="assignments">Assignments</string>
+
+    <string name="viewpager_title_1">Spring Commencement Photos</string>
+    <string name="viewpager_title_2">Two Montana State counseling students receive prestigious fellowship</string>
+    <string name="viewpager_title_3">Montana State wins $1 million grant to explore quantum economy potential</string>
+
+    <string name="viewpager_desc_1">Congratulations to the graduates of Montana State University\'s spring Class of 2023 who were awarded degrees during its 138th commencement ceremonies on Friday, May 12, at the Brick Breeden Fieldhouse.</string>
+    <string name="viewpager_desc_2">Two Montana State University students who plan to use their education to provide mental health counseling services to underserved populations have been awarded a coveted fellowship to help them meet their goals.</string>
+    <string name="viewpager_desc_3">As part of a new project funded with $1 million from the National Science Foundation, Montana State University will explore ways to leverage its expertise in photonics to grow a regional economy for precision agriculture and other technologies involving autonomous systems.</string>
 </resources>

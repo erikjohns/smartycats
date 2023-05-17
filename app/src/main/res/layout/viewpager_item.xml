@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:id="@+id/ivimage"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/viewpager_image_1"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHeading"
+                    android:layout_below="@id/ivimage"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/viewpager_title_2"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/quicksand_semibold"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDesc"
+                    android:layout_below="@id/tvHeading"
+                    android:layout_margin="10dp"
+                    android:text="@string/viewpager_desc_2"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:textColor="@color/black"/>
+                
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
